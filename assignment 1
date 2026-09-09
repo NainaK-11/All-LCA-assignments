@@ -1,1 +1,84 @@
+INPUT:
+1my_dict = {        #Question 1
+"101":"Alexa",
+"102":"Bella",
+"103":"Charlie",
+"104": "Diana",
+"105":"Elena"}
+print("Initial Student Information",my_dict)
+
+my_dict["106"] = "Finn"
+print("\n After adding Student 106", my_dict)
+
+del my_dict["103"]
+print("\n After deleting Student 103", my_dict)
+
+#Question 2:
+list1= ['name', 'panel', 'rollno']
+list2 = ['ABC', 'B', '34']
+my_dict2 = dict(zip(list1, list2))
+print("Converted Dictionary:",my_dict2)
+
+#Question 3:
+my_dict3 = {'name': 'ABC', 'panel': 'B', 'rollno': '34', 'marks': [65,87,67,94]}
+sorted_marks = sorted(my_dict3 ['marks'])
+print("Sorted Marks:", sorted_marks)
+
+#Question 4:
+my_dict4 = {'name': 'XYZ', 'panel': 'B', 'rollno': '24'}
+keys_list = list(my_dict4.keys())
+values_list = list(my_dict4.values())
+print("Keys List:", keys_list)
+print("Values List:", values_list)
+
+#question 5:
+my_dict5 = {'marks1':23, 'marks2': 119, 'marks3':75, 'marks4':82, 'marks5':90)
+values_list = list(my_dict5.values())
+mean_val = sum(values_list) / len(values_list)
+print("Mean of all values:", mean_val)
+
+#question 6:
+my_dict6 ('name': ['Yash', 'Neel', 'Dev'], 'rollno': [1,2,3], 'marks': [85,90,78]}
+my_dict6 = ('name': ['Yash', 'Neel', 'Dev'], 'rollno': [1,2,3], 'marks': [85,90,78]}
+print("Name:",my_dict6['name'][2])
+print("Roll No:", my_dict6['rollno'] [1])
+print("Greatest Marks:", max(my_dict6['marks']))
+
+#question 7:
+input_string = input("Enter a string: ")
+frequency = {}
+
+for letter in input_string:
+    frequency [letter] = frequency.get(letter,0) +1
+
+print("Letter frequencies:", frequency)
+
+#question 8:
+numerator = int(input("Enter numerator: "))
+denominator = int(input("Enter denominator: "))
+
+result = divmod(numerator, denominator)
+
+print("Output(Quotient, Remainder):", result)
+
+
+#question 9:
+import datetime
+def get_date_tuple(prompt_name):
+    print("\nEnter details for {prompt_name):")
+    d=int(input("Enter day (1-31): "))
+    m int(input("Enter month (1-12): "))
+    y=int(input("Enter year (eg, 2026): "))
+    return (d,m,y)
+
+date_tuple1 get_date_tuple("Date 1")
+date_tuple2= get_date_tuple("Date 2")
+
+date1 datetime.date(date_tuple1 (2), date_tuple1 [1], date tuple[0])
+date2 datetime.date(date_tuple2(2), date_tuple2 [1], date tuple[0]) 84
+
+difference Bbs(date2 date1)
+
+print("\nNumber of days between the two dates: (difference.days)days")
+
 
