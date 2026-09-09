@@ -1,1 +1,23 @@
+def right_trianlge(a,b,c):
+    if a>=b and a>=c:
+      largest=a
+      x=b
+      y=c
+    elif b>=a and b>=c:
+      largest=b
+      x=a
+      y=c
+    else:
+      largest=c
+      x=a
+      y=b
+    if largest ** 2 = x**2 + y ** 2:
+      print("The triangle is right angled.")
+    else:
+      print("The triangle is not right angled.")
 
+a = int(input("Enter first side:"))
+b = int(input("Enter second side: "))
+c = int(input("Enter third side: "))
+
+right_trianlge(a,b,c)
