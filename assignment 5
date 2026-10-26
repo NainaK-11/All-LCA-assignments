@@ -1,0 +1,16 @@
+import re
+
+string = input("Enter a string: ")
+
+if re.fullmatch(r'[a-zA-Z0-9]+', string):
+    print("The string contains only a-z, A-Z and 0-9 characters.")
+else:
+    print("The string contains characters other than a-z, A-Z and 0-9.")
+
+Output 1:
+Enter a string: Python123
+The string contains only a-z, A-Z and 0-9 characters.
+
+Output2: 
+Enter a string: Python@123
+The string contains characters other than a-z, A-Z and 0-9.
